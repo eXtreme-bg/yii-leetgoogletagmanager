@@ -1,12 +1,14 @@
 <?php
 
 /**
+ * Render the JavaScript tracking code.
  *
+ * @author Bogdan Kovachev (https://1337.bg)
  */
 class LeetGoogleTagManager extends CApplicationComponent {
 
     /** @var string|null */
-    public $id = NULL;
+    public $id = null;
 
     /** @var array */
     protected $_dataLayerForCurrentRequest = [];

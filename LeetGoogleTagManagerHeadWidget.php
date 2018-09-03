@@ -1,16 +1,20 @@
 <?php
 
 /**
+ * Render the JavaScript tracking code.
  *
+ * Put this widget as close to the opening <head> tag as possible on every page of your website.
+ *
+ * @author Bogdan Kovachev (https://1337.bg)
  */
 class LeetGoogleTagManagerHeadWidget extends CWidget {
 
     /**
-     *
+     * @inheritDoc
      */
     public function init() {
         // Don't render the markup if the ID is not provided
-        if (Yii::app()->googleTagManager->id === NULL) {
+        if (Yii::app()->googleTagManager->id === null) {
             return;
         }
 

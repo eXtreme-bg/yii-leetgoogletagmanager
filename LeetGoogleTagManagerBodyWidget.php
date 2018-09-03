@@ -1,6 +1,12 @@
 <?php
 
-//
+/**
+ * Render the tracking code used when JavaScript isn't available.
+ *
+ * Put this widget after the opening <body> tag on every page of your website.
+ *
+ * @author Bogdan Kovachev (https://1337.bg)
+ */
 class LeetGoogleTagManagerBodyWidget extends CWidget {
 
     /**
@@ -8,7 +14,7 @@ class LeetGoogleTagManagerBodyWidget extends CWidget {
      */
     public function init() {
         // Don't render the markup if the ID is not provided
-        if (Yii::app()->googleTagManager->id === NULL) {
+        if (Yii::app()->googleTagManager->id === null) {
             return;
         }
 
